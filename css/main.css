@@ -2,3 +2,16 @@
   content: "xem thêm...";
   color: cyan;
 }
+.img-banner {
+  min-height: 150px;
+}
+@media only screen and (min-width: 992px) {
+  .img-banner {
+    min-height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .img-banner {
+    min-height: 225px;
+  }
+}
