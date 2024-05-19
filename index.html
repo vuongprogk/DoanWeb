@@ -11,7 +11,8 @@
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <!-- /*github link https://github.com/vuongprogk/DoanWeb.git*/ -->
+  <body class="d-flex flex-column min-vh-100">
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary container-xl sticky-top"
     >
@@ -142,6 +143,16 @@
               Search
             </button>
           </form>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="darkmode"
+              checked
+            />
+            <label class="form-check-label" for="darkmode">Darkmode</label>
+          </div>
         </div>
       </div>
     </nav>
@@ -272,11 +283,34 @@
               </div>
             </a>
           </div>
+          <div class="list-group-flush list-group col-md-12 col-xl-6">
+            <a
+              href=""
+              class="text-decoration-none list-group-item-action list-group-item"
+            >
+              <div class="row">
+                <img
+                  src="./images/ta-thien-menh-dai-nhan-vat-phan-phai-dich-dcef1f18e3.jpg"
+                  alt=""
+                  style="width: 120px"
+                />
+                <div class="col-8">
+                  <h5>Ta! Thiên Mệnh Đại Nhân Vật Phản Phái (Dịch)</h5>
+                  <p class="description">
+                    Cố Trường Ca xuyên không trở thành nhân vật phản diện, làm
+                    thiếu chủ một trường sinh thế gia, hắn phải đối mặt với đủ
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
+    <footer class="mt-auto container-xl text-center">
+      Bài làm của Trần Đức Vượng
+    </footer>
     <script src="bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript.js"></script>
+    <script src="/js/javascript.js"></script>
   </body>
 </html>

@@ -44,3 +44,12 @@ function moveSection(i) {
     changeSection();
   }
 }
+let darkmode = document.getElementById("darkmode");
+darkmode.addEventListener("change", function () {
+  let root = document.querySelector("html");
+  if (darkmode.checked) {
+    root.setAttribute("data-bs-theme", "dark");
+  } else {
+    root.setAttribute("data-bs-theme", "light");
+  }
+});
