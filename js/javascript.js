@@ -1,8 +1,12 @@
 var jsonArray;
 function loadData(load) {
-  fetch("/data/giathien.json")
+  console.log("success");
+  fetch(".././data/giathien.json")
     .then((res) => res.json())
-    .then(load);
+    .then((json) => {
+      load(json);
+      console.log(json);
+    });
 }
 function changeSection() {
   let select = document.getElementById("chuong");
