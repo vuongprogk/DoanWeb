@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="d-flex flex-column min-vh-100">
+  <body onload="loadData(loadList)" class="d-flex flex-column min-vh-100">
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary container-xl sticky-top"
     >
@@ -130,6 +130,16 @@
               </ul>
             </li>
           </ul>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="darkmode"
+              checked
+            />
+            <label class="form-check-label" for="darkmode">Darkmode</label>
+          </div>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -178,11 +188,16 @@
           </div>
           <div class="col-lg-6 col-md-12">
             <h3>Danh sách chương</h3>
-            <iframe
+            <!-- <iframe
               src="dschuong.html"
               frameborder="0"
               class="w-100 h-100"
-            ></iframe>
+            ></iframe> -->
+            <div
+              class="list-group list-group-flush overflow-y-scroll"
+              id="chuong"
+              style="height: 400px"
+            ></div>
           </div>
         </div>
       </div>
@@ -190,7 +205,7 @@
     <footer class="mt-auto container-xl text-center">
       Bài làm của Trần Đức Vượng
     </footer>
-    <script src="bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript.js"></script>
+    <script src="/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/javascript.js"></script>
   </body>
 </html>
