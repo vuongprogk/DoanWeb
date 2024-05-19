@@ -1,0 +1,4 @@
+.description::after {
+  content: "xem thêm...";
+  color: cyan;
+}
