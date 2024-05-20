@@ -76,6 +76,8 @@ function moveSection(i) {
     select.value = index + i;
     localStorage.setItem("chuong", index + 1);
     changeSection();
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }
 
