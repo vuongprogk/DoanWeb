@@ -1,7 +1,9 @@
 let root = document.querySelector("html");
 let theme = localStorage.getItem("theme");
-root.setAttribute("data-bs-theme", theme);
-document.getElementById("darkmode").checked = theme === "dark" ? true : false;
+if (theme !== null) {
+  root.setAttribute("data-bs-theme", theme);
+  document.getElementById("darkmode").checked = theme === "dark" ? true : false;
+}
 
 var jsonArray;
 
