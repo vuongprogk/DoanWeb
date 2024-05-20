@@ -18,6 +18,7 @@ function loadData(load) {
 function changeSection() {
   let select = document.getElementById("chuong");
   let reading = document.getElementById("reading");
+  localStorage.setItem("chuong", select.value);
   reading.innerHTML = `<h3> ${jsonArray[select.value].title} </h3>`;
   jsonArray[select.value].content.forEach((value) => {
     reading.innerHTML += `<p>${value}</p>`;
