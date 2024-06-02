@@ -54,8 +54,16 @@ function loadOption(json) {
   changeSection();
 }
 function loadList(json) {
+  let spinner = document.querySelector("#spinner");
+  if (spinner !== null) {
+    spinner.remove();
+  }
   json.forEach((element, index) => {
     let select = document.getElementById("chuong");
+    select.setAttribute(
+      "class",
+      "list-group list-group-flush overflow-y-scroll"
+    );
     let link = document.createElement("a");
     link.innerText = element.title;
     link.setAttribute(
